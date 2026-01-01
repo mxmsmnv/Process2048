@@ -1,0 +1,215 @@
+/**
+ * 2048 Game Styles
+ * Game board only - stats cards are in inline CSS
+ */
+
+/* Game Container */
+.game-container {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: 30px auto 0 auto;
+    background: #bbada0;
+    border-radius: 8px;
+    padding: 10px;
+    box-sizing: border-box;
+    touch-action: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Responsive container adjustments */
+@media (max-width: 768px) {
+    .game-container {
+        width: 90vw;
+        max-width: 500px;
+        height: 90vw;
+        max-height: 500px;
+        margin: 20px auto 0 auto;
+        padding: 2vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .game-container {
+        width: 95vw;
+        height: 95vw;
+        margin: 15px auto 0 auto;
+        border-radius: 6px;
+    }
+}
+
+/* Grid */
+.grid-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    display: grid;
+    /* Grid template is set dynamically via JavaScript based on this.size */
+    gap: 10px;
+    cursor: pointer; /* Show it's interactive */
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        top: 2vw;
+        left: 2vw;
+        right: 2vw;
+        bottom: 2vw;
+        gap: 2vw;
+    }
+}
+
+.grid-cell {
+    background: rgba(238, 228, 218, 0.35);
+    border-radius: 3px;
+}
+
+/* Tiles */
+.tile-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    pointer-events: none;
+}
+
+@media (max-width: 768px) {
+    .tile-container {
+        top: 2vw;
+        left: 2vw;
+        right: 2vw;
+        bottom: 2vw;
+    }
+}
+
+.tile {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 3px;
+    transition: all 0.15s ease-in-out;
+    box-sizing: border-box;
+    /* Font size is set dynamically via JavaScript based on grid size */
+}
+
+/* Tile positions are now generated dynamically via JavaScript */
+
+/* Tile colors */
+.tile-2 { 
+    background: #eee4da; 
+    color: #776e65;
+}
+
+.tile-4 { 
+    background: #ede0c8; 
+    color: #776e65;
+}
+
+.tile-8 { 
+    background: #f2b179; 
+    color: #f9f6f2;
+}
+
+.tile-16 { 
+    background: #f59563; 
+    color: #f9f6f2;
+}
+
+.tile-32 { 
+    background: #f67c5f; 
+    color: #f9f6f2;
+}
+
+.tile-64 { 
+    background: #f65e3b; 
+    color: #f9f6f2;
+}
+
+.tile-128 { 
+    background: #edcf72; 
+    color: #f9f6f2;
+    font-size: 35px;
+}
+
+.tile-256 { 
+    background: #edcc61; 
+    color: #f9f6f2;
+    font-size: 35px;
+}
+
+.tile-512 { 
+    background: #edc850; 
+    color: #f9f6f2;
+    font-size: 35px;
+}
+
+.tile-1024 { 
+    background: #edc53f; 
+    color: #f9f6f2;
+    font-size: 30px;
+}
+
+.tile-2048 { 
+    background: var(--pw-primary-color, #2A6EBB); 
+    color: #f9f6f2;
+    font-size: 30px;
+    box-shadow: 0 0 20px rgba(42, 110, 187, 0.4);
+}
+
+.tile-4096 { 
+    background: #3c3a32; 
+    color: #f9f6f2;
+    font-size: 25px;
+}
+
+/* Game messages */
+.game-message {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(238, 228, 218, 0.95);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.game-message p {
+    font-size: 36px;
+    font-weight: bold;
+    color: #776e65;
+    margin-bottom: 20px;
+}
+
+.game-message.win p {
+    color: var(--pw-primary-color, #2A6EBB);
+}
+
+.game-message.game-over p {
+    color: #f65e3b;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    /* Font sizes are set dynamically via JavaScript */
+}
+
+@media (max-width: 500px) {
+    /* Font sizes are set dynamically via JavaScript */
+    
+    .game-message p {
+        font-size: 28px;
+    }
+}
