@@ -5,7 +5,7 @@
  * 
  * Take a break from building sites with a classic 2048 game
  * 
- * @author Maxim Alex
+ * @author Maxim Semenov <maxim@smnv.org> (smnv.org)
  * @license MIT
  */
 class Process2048 extends Process {
@@ -15,7 +15,8 @@ class Process2048 extends Process {
             'title' => '2048',
             'summary' => 'Take a break with 2048 game in ProcessWire admin',
             'version' => '1.3.3',
-            'author' => 'Maxim Alex',
+            'author' => 'Maxim Semenov',
+            'href'     => 'https://smnv.org',
             'icon' => 'gamepad',
             'requires' => 'ProcessWire>=3.0.0',
             'autoload' => false,

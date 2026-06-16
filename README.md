@@ -9,6 +9,10 @@ A fully-featured 2048 game module for ProcessWire admin interface with leaderboa
 
 ---
 
+**Author:** Maxim Semenov  
+**Website:** [smnv.org](https://smnv.org)  
+**Email:** [maxim@smnv.org](mailto:maxim@smnv.org)
+
 If this project helps your work, consider supporting future development: [GitHub Sponsors](https://github.com/sponsors/mxmsmnv) or [smnv.org/sponsor](https://smnv.org/sponsor/).  
 
 ## ✨ Features
@@ -230,13 +234,13 @@ gainNode.gain.value = 0.1;         // Change volume
 
 ## 📜 License
 
-MIT License - Copyright (c) 2025 Maxim Alex
+MIT License - Copyright (c) 2025 Maxim Semenov
 
 ---
 
 ## 👤 Author
 
-**Maxim Alex**
+**Maxim Semenov**
 
 - Website: [smnv.org](https://smnv.org)
 - Email: maxim@smnv.org
