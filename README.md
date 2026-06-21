@@ -7,6 +7,8 @@ A fully-featured 2048 game module for ProcessWire admin interface with leaderboa
 ![Version](https://img.shields.io/badge/version-1.3.3-green.svg)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
+![Process2048](assets/Process2048.png)
+
 ---
 
 **Author:** Maxim Semenov  
